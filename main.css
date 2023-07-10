@@ -48,12 +48,13 @@ body {
     color: #ffffff;
     padding: 20px;
     text-align: center;
+    width: 100%;
   }  
   /* Estilos específicos */
   #inicio {
     background-color: #f0f0f0;
   }
-  #imglogo{
+  .imglogo{
     width: 100%;
   }
   
@@ -76,16 +77,16 @@ body {
   link[rel="icon"] {
     width: 50px;
     height: 50px;
-    /* Otros estilos personalizados */
   }
+  
   /* Configuración de propiedades para parrafos */
   p{
     text-align: justify;
   }
   .htext{
     color: #ffffff;
-    /* Estilos de redes sociales */
   }
+  /* Estilos de redes sociales */
   .redes_sociales{
     width: 25px;
     height: 25px;
@@ -94,12 +95,15 @@ body {
     width: 15px;
     height: 15px;
   }
-  a:hover {
-    color: rgb(168, 187, 0);
+  a {
+    background-color: powderblue;
     transition: background-color .5s;
   }
-  a:active {
-    color: yellow;
+  
+  a:hover {
+    background-color: gold;
+    text-emphasis-color: red;
+    transition: background-color .5s;
   }
   .color_titulos_body{
     color: #0058a8;
@@ -108,55 +112,77 @@ body {
   .contacto{
     background-color:rgb(218, 238, 255);
     border-radius: 8px;
-    width: 10%;
   }
+  /*Estilos para el Maps de la dirección del consultorio*/
   iframe{
     border-radius: 0px 8px 8px 0px;
     height: 100%;
   }
 
-  /* Estilos para dispositivos iPad */
-  
-  @media only screen and (min-width: 768px) and (max-width: 900px) {
+  /*Estilos para dispositivos iPad */
+  @media only screen and (min-width: 768px) and (max-width: 995px) {
     header {background-color: rgb(25, 37, 88);
-        padding: 1px;
-        text-align: center;
-        position:sticky;
-        top: 0;
-        width: 100%;}
-        nav ul {
-            background-color: rgb(25, 37, 88);
-            list-style: none;
-            padding: 0;
-            margin: 0;
-          }
+      padding: 1px;
+      text-align: center;
+      font-size: 16px;
+      color: #ffffff;
+      position:sticky;
+      top: 0;
+      width: 100%;}
+    nav ul {
+      background-color: rgb(25, 37, 88);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
           
-          nav ul li {
-            display: inline;
-            margin-right: 1px;
-  }
+    nav ul li {
+      display: inline;
+      margin-right: 1px;
+    }
+    footer{
+      width: 100%;
+    }
+    .htext{
+      font-size: 24px;
+    }
+    main {
+      padding: 20px;
+      margin-top: 20%;
+    }
   }
   
-  /* Estilos para dispositivos iPhone */
+  /*Estilos para dispositivos iPhone */
   @media only screen and (max-width: 767px) { 
     header {background-color: rgb(0, 11, 162);
-        padding: 1px;
-        text-align: center;
-        position:sticky;
-        top: 0;
-        width: 100%;}
-        nav ul {
-            background-color: rgb(0, 11, 162);
-            list-style: none;
-            padding: 0;
-            margin: 0;
-          }
-          
-          nav ul li {
-            display: inline;
-            margin-right: 1px;
+      padding: 1px;
+      text-align: center;
+      font-size: 16px;
+      position:sticky;
+      top: 0;
+      width: 100%;
+    }
+    nav ul {
+      background-color: rgb(0, 11, 162);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+    nav ul li {
+      display: inline;
+      margin-right: 1px;
+      }
+    footer{
+        width: 100%;
+      }
+      main {
+        padding: 20px;
+        margin-top: 30%;
+      }
+      .htext{
+        font-size: 20px;
+      }
   }
-}
 
   /* Estilos para dispositivos PC */
   @media only screen and (min-width: 901px) {
