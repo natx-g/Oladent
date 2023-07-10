@@ -30,7 +30,8 @@ body {
     display: inline;
     margin-right: 10px;
   }
-  
+   
+
   /* Estilos del contenido principal */
   main {
     padding: 20px;
@@ -83,6 +84,7 @@ body {
   }
   .htext{
     color: #ffffff;
+    /* Estilos de redes sociales */
   }
   .redes_sociales{
     width: 25px;
@@ -102,6 +104,7 @@ body {
   .color_titulos_body{
     color: #0058a8;
   }
+  /* Estilos de contacto*/
   .contacto{
     background-color:rgb(218, 238, 255);
     border-radius: 8px;
@@ -111,3 +114,53 @@ body {
     border-radius: 0px 8px 8px 0px;
     height: 100%;
   }
+
+  /* Estilos para dispositivos iPad */
+  
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+    header {background-color: rgb(25, 37, 88);
+        padding: 1px;
+        text-align: center;
+        position:sticky;
+        top: 0;
+        width: 100%;}
+        nav ul {
+            background-color: rgb(25, 37, 88);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          nav ul li {
+            display: inline;
+            margin-right: 1px;
+  }
+  }
+  
+  /* Estilos para dispositivos iPhone */
+  @media only screen and (max-width: 767px) { 
+    header {background-color: rgb(0, 11, 162);
+        padding: 1px;
+        text-align: center;
+        position:sticky;
+        top: 0;
+        width: 100%;}
+        nav ul {
+            background-color: rgb(0, 11, 162);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          nav ul li {
+            display: inline;
+            margin-right: 1px;
+  }
+}
+
+  /* Estilos para dispositivos PC */
+  @media only screen and (min-width: 901px) {
+    
+  }
+ 
+  
