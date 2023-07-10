@@ -4,21 +4,14 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  h1, h2 {
-    color: #0058a8;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #00c0f2;
-  }
-  
   /* Estilos del encabezado */
   header {
     background-color: #0058a8;
-    padding: 20px;
+    padding: 2px;
     text-align: center;
+    position:sticky;
+    top: 0;
+    width: 100%;
   }
   
   header h1 {
@@ -27,6 +20,7 @@ body {
   }
   
   nav ul {
+    background-color: #0058a8;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -40,6 +34,7 @@ body {
   /* Estilos del contenido principal */
   main {
     padding: 20px;
+    margin-top: 10%;
   }
   
   section {
@@ -52,11 +47,13 @@ body {
     color: #ffffff;
     padding: 20px;
     text-align: center;
-  }
-  
+  }  
   /* Estilos específicos */
   #inicio {
     background-color: #f0f0f0;
+  }
+  #imglogo{
+    width: 100%;
   }
   
   #servicios ul {
@@ -69,14 +66,48 @@ body {
     margin-left: 20px;
   }
   .carousel-item img {
-    height: 500px;
+    width: 100%;
     object-fit: contain;
   }
 
 
-/* Estilos para el logo del consultorio */
-link[rel="icon"] {
+  /* Estilos para el logo del consultorio */
+  link[rel="icon"] {
     width: 50px;
     height: 50px;
     /* Otros estilos personalizados */
+  }
+  /* Configuración de propiedades para parrafos */
+  p{
+    text-align: justify;
+  }
+  .htext{
+    color: #ffffff;
+  }
+  .redes_sociales{
+    width: 25px;
+    height: 25px;
+  }
+  .icono_body{
+    width: 15px;
+    height: 15px;
+  }
+  a:hover {
+    color: rgb(168, 187, 0);
+    transition: background-color .5s;
+  }
+  a:active {
+    color: yellow;
+  }
+  .color_titulos_body{
+    color: #0058a8;
+  }
+  .contacto{
+    background-color:rgb(218, 238, 255);
+    border-radius: 8px;
+    width: 10%;
+  }
+  iframe{
+    border-radius: 0px 8px 8px 0px;
+    height: 100%;
   }
