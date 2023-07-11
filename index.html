@@ -14,6 +14,9 @@
 </head>
 
 <body id="inicio">
+  <!-- Plugin facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="Nx0LehH4"></script>
   <!-- Encabezado de la pagina con logos y social media -->
   <header class="fixed-top">
     <div class="container text-center">
@@ -53,10 +56,29 @@
           </p>
           <nav>
             <ul>
-              <li><a href="#inicio" class="htext">Inicio</a></li>
-              <li><a href="#servicios" class="htext">Servicios</a></li>
-              <li><a href="#registrodecita" class="htext">Registro de cita</a></li>
-              <li><a href="#contacto" class="htext">Contacto</a></li>
+              <li class="menu">
+                <a href="#inicio" class="htext icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-door-fill icono_body" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                  </svg>&nbsp;Inicio
+                </a>
+              </li>
+              <li class="menu">
+                <a href="#servicios" class="htext icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-hospital-fill icono_body" viewBox="0 0 16 16">
+                    <path d="M6 0a1 1 0 0 0-1 1v1a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6v-2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V16h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3V3a1 1 0 0 0-1-1V1a1 1 0 0 0-1-1H6Zm2.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM2.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 9.75v-.5A.25.25 0 0 1 2.25 9Zm0 2h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5ZM13.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25Z"/>
+                  </svg>&nbsp;Servicios</a></li>
+              <li class="menu">
+                <a href="#registrodecita" class="htext icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-week-fill icono_body" viewBox="0 0 16 16">
+                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zM2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                  </svg>&nbsp;Registro de cita</a></li>
+              <li class="menu">
+                <a href="#contacto" class="htext icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-map-fill icono_body" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                  </svg>&nbsp;Contacto</a></li>
             </ul>
           </nav>
         </div>
@@ -82,9 +104,9 @@
           Contamos con los más altos estándares de calidad ofreciéndote beneficios como:
           </p>
           <ul>
-            <li>Planes dentales hechos a la medida</li>
-            <li>Horarios que se adaptan a tu estilo de vida</li>
-            <li>Precios accesibles con materiales de la más alta calidad</li>
+            <li>Planes dentales hechos a la medida.</li>
+            <li>Horarios que se adaptan a tu estilo de vida.</li>
+            <li>Precios accesibles con materiales de la más alta calidad.</li>
           </ul>
           En Oladent nuestros tratamientos son una inversión para tu salud, obteniendo grandes beneficios.</p>
         </div>
@@ -123,7 +145,11 @@
     <section id="servicios" class="container">
             <div class="row">
               <div class="col-sm-4">
-                <h3 class="color_titulos_body">Servicios</h3>
+                <h3 class="color_titulos_body">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-award-fill icono_titulos" viewBox="0 0 16 16">
+                  <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                </svg> Servicios</h3>
                 <!-- Parte de Odontologia general -->
                 <h5>Odontología General</h5>
                 <ul>
@@ -152,7 +178,11 @@
               </div>
               <!-- Especialidades -->
               <div class="col-sm-4">
-                <h3 class="color_titulos_body">Especialidades</h3>
+                <h3 class="color_titulos_body">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-award-fill icono_titulos" viewBox="0 0 16 16">
+                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                  </svg> Especialidades</h3>
                 <h5>Contamos con especialistas en Cirugía Maxilar</h5>
                 <ul>
                   <li>Ortodoncia.</li>
@@ -168,7 +198,11 @@
               </div>
               <!-- Urgencias -->
               <div class="col-sm-4">
-                <h3 class="color_titulos_body">Urgencias</h3>
+                <h3 class="color_titulos_body">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-award-fill icono_titulos" viewBox="0 0 16 16">
+                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                  </svg> Urgencias</h3>
                 <h5>Servicio de urgencias las 24 horas.</h5>
                 <ul>
                   <li>Dolor dental.</li>
@@ -183,7 +217,10 @@
     <section id="registrodecita" class="container">
             <div class="row">
               <div class="col-sm-12">
-                <h3 class="color_titulos_body">Registro de Cita</h2>
+                <h3 class="color_titulos_body">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar2-check-fill icono_titulos" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg>&nbsp; Registro de Cita</h2>
                 <ul>
                   <li>Fecha</li>
                   <li>Afeccion prinicpal</li>
@@ -196,38 +233,52 @@
     <section id="contacto" class="card contacto container"><br>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.5148188039793!2d-99.8508675239366!3d16.850408883948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca59cfc424c107%3A0xb9746451ab638afe!2sOlaDent!5e0!3m2!1ses-419!2smx!4v1689013289138!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="card-img-top" alt="dirección">
       </iframe>
-      <div class="card-body">
-        <h3 class="card-title color_titulos_body">Contacto</h3>
-        <p class="card-text">
-        <h6>Previas citas y urgencias:</h6>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-telephone-fill icono_body" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-        </svg>
-        <i class="bi bi-telephone-fill">744-516-53-45</i>
-        <h6>Correo:</h6>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-envelope-at-fill icono_body" viewBox="0 0 16 16">
-          <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
-          <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
-        </svg>
-        <i class="bi bi-telephone-fill">hbc.ebano@gmail.com</i>
-        </p>
-        <!-- Botón para abrir maps en una ventana modal-->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-geo-alt-fill icono_body" viewBox="0 0 16 16">
-            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-          </svg>
-          Ampliar mapa
-        </button>
+      <section id="servicios" class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card-body">
+              <h3 class="card-title color_titulos_body">Contacto</h3>
+              <p class="card-text">
+              <h6>Previas citas y urgencias:</h6>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-telephone-fill icono_body" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg>
+              <i class="bi bi-telephone-fill">744-516-53-45</i>
+              <h6>Correo:</h6>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-envelope-at-fill icono_body" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+              </svg>
+              <i class="bi bi-telephone-fill">hbc.ebano@gmail.com</i>
+              </p>
+              <!-- Botón para abrir maps en una ventana modal-->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-geo-alt-fill icono_body" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>
+              Ampliar mapa
+              </button>
+           </div>
+          </div>
+          <div class="col-sm-8">
+            <br>
+            <div class="fb-page" data-href="https://www.facebook.com/OlaDentMx" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OlaDentMx" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OlaDentMx">Oladent</a></blockquote></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Ventana Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+
+
+      <!-- Ventana Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-geo-alt-fill icono_body" viewBox="0 0 16 16">
                   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                 </svg>
-                <h3 class="modal-title fs-5 color_titulos_body" id="staticBackdropLabel">Ubicación en maps</h3>
+                <h3 class="modal-title fs-5 color_titulos_body" id="staticBackdropLabel"> Ubicación en maps</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">

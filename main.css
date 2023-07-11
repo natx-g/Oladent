@@ -17,20 +17,34 @@ body {
   header h1 {
     color: #ffffff;
     margin: 0;
+
+    /* Estilos para el menú*/
   }
-  
-  nav ul {
-    background-color: #0058a8;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
   nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-flex;
+    border-radius: 8px;
   }
-   
+  .menu{
+    width: 140px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+    justify-content: space-around;
+    text-decoration-line: none;
+  }
+  a {
+    transition: background-color .5s;
+     align-self: center;
+  }
+    a:hover {
+    width: 150px;
+    background-color: #8bdeff;
+    color: #1c0097;
+    transition: background-color .5s;
+    border-radius: 8px;
+    text-decoration: none;
+    align-self: center;
+  }
 
   /* Estilos del contenido principal */
   main {
@@ -95,20 +109,16 @@ body {
     width: 15px;
     height: 15px;
   }
-  a {
-    transition: background-color .5s;
-    text-decoration-line: none;
+  .icono_titulos{
+    width: 27px;
+    height: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
   }
-  
-  a:hover {
-    
-    color: #a0e1f1;
-    transition: background-color .5s;
-    border-radius: 8px;
-    text-decoration: none;
-  }
-  .color_titulos_body{
+    .color_titulos_body{
     color: #0058a8;
+    display: flex;
   }
   /* Estilos de contacto*/
   .contacto{
