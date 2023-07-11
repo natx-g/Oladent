@@ -213,7 +213,10 @@
         </p>
         <!-- Botón para abrir maps en una ventana modal-->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-         Ampliar mapa
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-geo-alt-fill icono_body" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          Ampliar mapa
         </button>
 
         <!-- Ventana Modal -->
@@ -221,6 +224,9 @@
           <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-geo-alt-fill icono_body" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
                 <h3 class="modal-title fs-5 color_titulos_body" id="staticBackdropLabel">Ubicación en maps</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
@@ -228,7 +234,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15274.059265845644!2d-99.848293!3d16.850409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca59cfc424c107%3A0xb9746451ab638afe!2sOlaDent!5e0!3m2!1ses-419!2smx!4v1689087798215!5m2!1ses-419!2smx" class="frame-modal" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div class="modal-footer">
- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
